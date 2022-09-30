@@ -2,10 +2,6 @@ body {
     background-color: bisque;
 }
 
-ul {
-    color:black;
-    text-align: center;
-}
 
 /* unvisited link */
 a:link {
