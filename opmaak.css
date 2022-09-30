@@ -1,26 +1,6 @@
 body { 
     background-color: lightgray;
 }
-
-/* unvisited link */
-a:link {
-    color: hsl(73, 94%, 87%);
-  }
-
-  /* visited link */
-a:visited {
-    color: rgb(75, 193, 225);
-  }
-
-  /* mouse over link */
-a:hover {
-    color: rgb(255, 133, 194);
-  }
-
-  /* selected link */
-a:active {
-    color: rgb(177, 255, 170);
-  }
   
 *{ 
   padding: 0;
