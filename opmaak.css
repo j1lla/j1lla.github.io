@@ -1,11 +1,11 @@
 body { 
-    background-color: bisque;
+    background-color: lightgray;
 }
 
 
 /* unvisited link */
 a:link {
-    color: hsla(82, 51%, 66%, 0.895);
+    color: hsl(73, 94%, 87%);
   }
 
   /* visited link */
@@ -15,11 +15,11 @@ a:visited {
 
   /* mouse over link */
 a:hover {
-    color: rgb(253, 163, 208);
+    color: rgb(255, 133, 194);
   }
 
   /* selected link */
 a:active {
-    color: rgb(255, 132, 132);
+    color: rgb(177, 255, 170);
   }
   
