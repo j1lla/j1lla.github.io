@@ -26,3 +26,16 @@ a:hover {
 a:active {
     color: rgb(255, 132, 132);
   }
+
+  li {
+    display: inline;
+  }
+  li {
+    float: left;
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
