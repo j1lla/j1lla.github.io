@@ -6,3 +6,23 @@ ul {
     color:black;
     text-align: center;
 }
+
+/* unvisited link */
+a:link {
+    color: hsla(82, 51%, 66%, 0.895);
+  }
+
+  /* visited link */
+a:visited {
+    color: rgb(75, 193, 225);
+  }
+
+  /* mouse over link */
+a:hover {
+    color: rgb(253, 163, 208);
+  }
+
+  /* selected link */
+a:active {
+    color: rgb(255, 132, 132);
+  }
