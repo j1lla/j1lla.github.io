@@ -49,8 +49,8 @@ label.logo{
 }
 
 nav ul{
-float: right;
-margin-right: 20px;
+float: left;
+margin-left: 20px;
 }
 
 nav ul li{
@@ -70,7 +70,7 @@ nav ul li a{
 a.active,a:hover{
   background:rgb(110, 110, 110)
   transition: .5s;
-  
+
 
 
 }
