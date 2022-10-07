@@ -14,98 +14,95 @@ body{
   font-family: sans-serif;
 }
 
-nav{
-  background: rgb(110, 110, 110);
-  height: 80px;
-  width: 100%;
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
 }
 
-label.logo{
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
+.third-level-menu > li
+{
+    height: 30px;
+    background: #999999;
+}
+.third-level-menu > li:hover { background: #CCCCCC; }
+
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
 }
 
-nav ul{
-float: right;
-margin-right: 20px;
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: #999999;
+}
+.second-level-menu > li:hover { background: #CCCCCC; }
+
+.top-level-menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li{
-display: inline-block;
-line-height: 80px;
-margin: 0 5px;
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    width: 150px;
+    background: #999999;
+}
+.top-level-menu > li:hover { background: #CCCCCC; }
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
 }
 
-nav ul li a{
-  color: white;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
 
-a.active,a:hover{
-  background:rgb(110, 110, 110)
-  transition: .5s;
-}
+/* Menu Link Styles */
 
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 0 0 10px;
 
-#check{
-  display: none;
-}
-
-@media (max-width: 952px){
-  label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 858px){
-  .checkbtn{
+    /* Make the link cover the entire list item-container */
     display: block;
+    line-height: 30px;
 }
-ul{
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: rgba(59, 59, 59, 0.2);
-  top: 80px;
-  left: -100%;
-  text-align: center;
-  transition: all .5s;
-}
+.top-level-menu a:hover { color: #000000; }
 
-nav ul li{
-  display: block;
-  margin: 50px 0;
-  line-height: 30px;
-}
-
-nav ul li a{
-  font-size: 20px;
-}
-
-a:hover,a.active{
-  background: none;
-  color:darkslategray;
-}
-
-#check:checked ~ ul{
-  left: 0;
-}
+<ul class="top-level-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">drielagenmodel</a></li>
+    <li><a href="#">cpu</a></li>
+    <li>
+        <a href="#">drielagenmodel</a>
+        <ul class="second-level-menu">
+            <li><a href="#">fysieke laag</a></li>
+            <li><a href="#">logische laag</a></li>
+            <li><a href="#">toepassingslaag</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+</ul>
