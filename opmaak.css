@@ -9,23 +9,31 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 li {
-  float: left
+  float: left;
 }
-</style>
-</head>
 
 li a {
   display: block;
-  padding: 8px;
-  background-color: #dddddd;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
 
 <body>
 
 <ul>
-  <li><a href="#home">Home</a></li>
+  <li><a class="active" href="#home">Home</a></li>
   <li><a href="#drielagenmodel">drielagenmodel</a></li>
   <li><a href="#cpu">cpu</a></li>
 </ul>
