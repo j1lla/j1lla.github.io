@@ -14,7 +14,7 @@
 
 /*achtergrondafbeelding instellen*/
 body {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-position: left top;
   background-image: url("achtergrond.webp");
   background-attachment: fixed;
