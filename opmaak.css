@@ -112,7 +112,7 @@ body {
 /*opmaak voor basic tekst*/
 p {
   margin: 15px;
-  font-family:Verdana, Arial, Tahoma, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   display: block;
   color: var(--color-black);
