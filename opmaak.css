@@ -112,7 +112,7 @@ body {
 /*opmaak voor basic tekst*/
 p {
   margin: 15px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   display: block;
   color: var(--color-black);
